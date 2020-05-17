@@ -1,0 +1,32 @@
+Shopping 
+
+1. 数据库设计工具pdman
+2. 数据库外键(物理外键)在分布式系统中移除。  原因：性能影响，热更新，降低耦合度。
+3. 數據源使用 HikariCP 
+4. MyBatis 逆向生成工具
+
+# Start Docker Service
+
+docker-machine ip default                                                                                          192.168.99.100
+
+docker exec -it name bash/bin
+
+docker start name
+
+```bash
+docker create \
+  --name=mariadb \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -e TZ=Europe/London \
+  -e MYSQL_DATABASE=test `#optional` \
+  -e MYSQL_USER=admin  `#optional` \
+  -e MYSQL_PASSWORD=admin `#optional` \
+  -p 3306:3306 \
+  -v path_to_data:/config \
+  --restart unless-stopped \
+  linuxserver/mariadb
+```
+
+docker run -itd -p 3306:3306 --name mysql -e MYSQL_USER=admin -e MYSQL_PASSWORD=admin -e MYSQL_ROOT_PASSWORD=root mysql --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
