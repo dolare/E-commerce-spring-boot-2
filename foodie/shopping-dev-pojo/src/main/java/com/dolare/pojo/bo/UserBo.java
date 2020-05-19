@@ -1,5 +1,6 @@
 package com.dolare.pojo.bo;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,5 +11,6 @@ public class UserBo {
 
     private String password;
 
+    @ApiModelProperty(required = false)
     private String confirmPassword;
 }

@@ -3,8 +3,34 @@ Shopping
 1. 数据库设计工具pdman
 2. 数据库外键(物理外键)在分布式系统中移除。  原因：性能影响，热更新，降低耦合度。
 3. 數據源使用 HikariCP 
-4. MyBatis 逆向生成工具
+4. MyBatis 逆向生成工具  mybatis-generator   myMapper(插件）  
+5. mysql 8.0 use a new password machnism
+6. 事务 transaction，  传播方式 默认： propagation.requred,  
+ required:  使用当前事务，如果当前没有事务，则新建一个事务，子方法必须运行在一个事务中， 如果当前有事务，子方法会加入这个事务， 出现异常， 都会回滚
+ supports: 如果当前有事务，则使用事务， 如果当前没有事务，则不使用事务
+ mandatory: 强制必须存在一个事务，否则异常
+ require_new: 如果当前有事务，挂起当前事务，用一个独立的新事务， 如果当前没有实物，用一个新事务
+ not_supported: 不管当前有无事务， 都不使用并且挂起该事务。
+ nevert: 和not support一样，区别是 如果当前有事务，会抛出异常
+ nest: 如果当前（父类）有事务， 就用一个嵌套的方式，  如果当前没有事务， 和required一样
+ 
+ @EnableTransactionManagement is already in autoConfiguration
 
+7. swagger2 configuration (use auto config with springboot2), its better to use a thirdpaty user interface instead of the offical one.
+
+8. common -> pojo -> mapper -> service -> API(Controller)
+ 
+9. Tomcat start front-end server
+
+10. cros configuration using cors springboot2 config
+
+11. debugger; in the front-end development can be used to do the breakpoint debug
+
+12. cookie: path, only shared it with same or parent domain, experation date, 4k
+
+13. session: 非持久，session is by session id, key value storrage type.  HttpSession.  it is stored in browser cookie part(section) as well.
+
+14. 
 # Start Docker Service
 
 docker-machine ip default                                                                                          192.168.99.100
@@ -29,4 +55,4 @@ docker create \
   linuxserver/mariadb
 ```
 
-docker run -itd -p 3306:3306 --name mysql -e MYSQL_USER=admin -e MYSQL_PASSWORD=admin -e MYSQL_ROOT_PASSWORD=root mysql --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+docker run -itd -p 3306:3306 --name mysql -e MYSQL_USER=admin -e MYSQL_DATABASE=shopping -e MYSQL_PASSWORD=admin -e MYSQL_ROOT_PASSWORD=root mysql --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci

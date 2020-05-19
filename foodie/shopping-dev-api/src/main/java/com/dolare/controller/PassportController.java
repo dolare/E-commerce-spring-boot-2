@@ -1,12 +1,19 @@
 package com.dolare.controller;
 
+import com.dolare.pojo.Users;
 import com.dolare.pojo.bo.UserBo;
 import com.dolare.service.UserService;
+import com.dolare.utils.CookieUtil;
 import com.dolare.utils.JSONResult;
+import com.dolare.utils.JSONUtil;
+import com.dolare.utils.MD5;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import tk.mybatis.mapper.util.StringUtil;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 @Api(value="users", tags = {"user related"})
 @RestController
@@ -25,10 +32,10 @@ public class PassportController {
 
         // check existence
         boolean isExist = userService.queryUsernameIsExits(username);
-        return isExist ? JSONResult.ok() : JSONResult.errorMsg("username doens't exist");
+        return isExist ? JSONResult.errorMsg("user already exits") : JSONResult.errorMsg("username doens't exist");
     }
 
-    @PostMapping("/register")
+    @PostMapping("/regist")
     public JSONResult register(@RequestBody UserBo userBo) {
         String username = userBo.getUsername();
 
@@ -58,5 +65,42 @@ public class PassportController {
         userService.createUser(userBo);
 
         return JSONResult.ok();
+    }
+
+    @PostMapping("/login")
+    public JSONResult login(@RequestBody UserBo userBo,
+                            HttpServletRequest request,
+                            HttpServletResponse response ) {
+        String username = userBo.getUsername();
+
+        String password = userBo.getPassword();
+
+        // if input is valid
+        if (StringUtil.isEmpty(username) || StringUtil.isEmpty(password)) {
+            return JSONResult.errorMsg("password or username can not be empty!");
+        }
+
+        // complete
+        try {
+            Users users = userService.queryUserForLogin(username, MD5.getMD5Str(password));
+            // System.out.println(users);
+            setUserEmptyProperty(users);
+            CookieUtil.setCookie(request, response, "user",
+                    JSONUtil.objectToJson(users), true);
+            return users != null ? JSONResult.ok(users) : JSONResult.errorMsg("username or password is wrong");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return JSONResult.errorMsg("username or password is wrong");
+        }
+    }
+
+    private Users setUserEmptyProperty(Users users) {
+        users.setPassword(null);
+        users.setMobile(null);
+        users.setEmail(null);
+        users.setCreatedTime(null);
+        users.setUpdatedTime(null);
+        users.setBirthday(null);
+        return users;
     }
 }

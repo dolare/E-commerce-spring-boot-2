@@ -6,4 +6,6 @@ public interface UserService {
     public boolean queryUsernameIsExits (String username);
 
     public Users createUser(UserBo userBO);
+
+    public Users queryUserForLogin(String username, String password);
 }
