@@ -10,5 +10,5 @@ public class UserBo {
 
     private String password;
 
-    private String comfirmPasswor;
+    private String confirmPassword;
 }
