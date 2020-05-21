@@ -1,5 +1,7 @@
 com\dolare\Application.class
 com\dolare\config\CorsConfig.class
+com\dolare\aspect\ServiceLogAspect.class
 com\dolare\controller\PassportController.class
+com\dolare\controller\IndexController.class
 com\dolare\config\Swagger2.class
 com\dolare\controller\HelloController.class

@@ -1,0 +1,21 @@
+2020-05-20 23:29:31 INFO  DispatcherServlet:524 = Initializing Servlet 'dispatcherServlet'
+2020-05-20 23:29:31 INFO  DispatcherServlet:546 = Completed initialization in 8 ms
+2020-05-20 23:29:31 INFO  HikariDataSource:110 = DataSourceHakariCP - Starting...
+2020-05-20 23:29:31 WARN  DriverDataSource:68 = Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-05-20 23:29:31 INFO  HikariDataSource:123 = DataSourceHakariCP - Start completed.
+2020-05-20 23:29:31 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllSubCategoryList=======
+2020-05-20 23:29:31 INFO  ServiceLogAspect:44 = ====== end, cost: 50 ms =======
+2020-05-20 23:29:32 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllSubCategoryList=======
+2020-05-20 23:29:32 INFO  ServiceLogAspect:44 = ====== end, cost: 12 ms =======
+2020-05-20 23:29:32 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllSubCategoryList=======
+2020-05-20 23:29:32 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllSubCategoryList=======
+2020-05-20 23:29:32 INFO  ServiceLogAspect:44 = ====== end, cost: 9 ms =======
+2020-05-20 23:29:32 INFO  ServiceLogAspect:44 = ====== end, cost: 8 ms =======
+2020-05-20 23:29:32 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllSubCategoryList=======
+2020-05-20 23:29:32 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllSubCategoryList=======
+2020-05-20 23:29:32 INFO  ServiceLogAspect:44 = ====== end, cost: 6 ms =======
+2020-05-20 23:29:32 INFO  ServiceLogAspect:44 = ====== end, cost: 9 ms =======
+2020-05-20 23:29:32 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllSubCategoryList=======
+2020-05-20 23:29:32 INFO  ServiceLogAspect:44 = ====== end, cost: 5 ms =======
+2020-05-20 23:29:32 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllSubCategoryList=======
+2020-05-20 23:29:32 INFO  ServiceLogAspect:44 = ====== end, cost: 4 ms =======

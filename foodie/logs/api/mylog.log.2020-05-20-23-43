@@ -1,0 +1,26 @@
+2020-05-20 23:43:00 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllRootLevelCategory=======
+2020-05-20 23:43:00 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CarouselServiceImpl.queryAll=======
+2020-05-20 23:43:00 INFO  ServiceLogAspect:44 = ====== end, cost: 3 ms =======
+2020-05-20 23:43:00 INFO  ServiceLogAspect:44 = ====== end, cost: 4 ms =======
+2020-05-20 23:43:02 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllSubCategoryList=======
+2020-05-20 23:43:02 INFO  ServiceLogAspect:44 = ====== end, cost: 2 ms =======
+2020-05-20 23:43:02 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllSubCategoryList=======
+2020-05-20 23:43:02 INFO  ServiceLogAspect:44 = ====== end, cost: 2 ms =======
+2020-05-20 23:43:04 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllSubCategoryList=======
+2020-05-20 23:43:04 INFO  ServiceLogAspect:44 = ====== end, cost: 3 ms =======
+2020-05-20 23:43:04 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllSubCategoryList=======
+2020-05-20 23:43:04 INFO  ServiceLogAspect:44 = ====== end, cost: 3 ms =======
+2020-05-20 23:43:04 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllSubCategoryList=======
+2020-05-20 23:43:04 INFO  ServiceLogAspect:44 = ====== end, cost: 4 ms =======
+2020-05-20 23:43:04 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllSubCategoryList=======
+2020-05-20 23:43:04 INFO  ServiceLogAspect:44 = ====== end, cost: 2 ms =======
+2020-05-20 23:43:29 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllSubCategoryList=======
+2020-05-20 23:43:29 INFO  ServiceLogAspect:44 = ====== end, cost: 2 ms =======
+2020-05-20 23:43:29 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllSubCategoryList=======
+2020-05-20 23:43:29 INFO  ServiceLogAspect:44 = ====== end, cost: 2 ms =======
+2020-05-20 23:43:29 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllSubCategoryList=======
+2020-05-20 23:43:29 INFO  ServiceLogAspect:44 = ====== end, cost: 2 ms =======
+2020-05-20 23:43:30 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllSubCategoryList=======
+2020-05-20 23:43:30 INFO  ServiceLogAspect:44 = ====== end, cost: 1 ms =======
+2020-05-20 23:43:31 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllSubCategoryList=======
+2020-05-20 23:43:31 INFO  ServiceLogAspect:44 = ====== end, cost: 3 ms =======

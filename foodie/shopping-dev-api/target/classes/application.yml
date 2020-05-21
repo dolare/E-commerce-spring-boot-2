@@ -22,7 +22,7 @@ mybatis:
   type-aliases-package: com.dolare.pojo
   mapper-locations: classpath:mapper/*.xml
   configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # only use for development to print sql statement
 ## server related
 
 server:

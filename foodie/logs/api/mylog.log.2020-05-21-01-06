@@ -1,0 +1,10 @@
+2020-05-21 01:06:07 INFO  DispatcherServlet:524 = Initializing Servlet 'dispatcherServlet'
+2020-05-21 01:06:07 INFO  DispatcherServlet:546 = Completed initialization in 7 ms
+2020-05-21 01:06:07 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CarouselServiceImpl.queryAll=======
+2020-05-21 01:06:07 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.queryAllRootLevelCategory=======
+2020-05-21 01:06:07 INFO  HikariDataSource:110 = DataSourceHakariCP - Starting...
+2020-05-21 01:06:07 WARN  DriverDataSource:68 = Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-05-21 01:06:07 INFO  HikariDataSource:123 = DataSourceHakariCP - Start completed.
+2020-05-21 01:06:07 INFO  ServiceLogAspect:44 = ====== end, cost: 677 ms =======
+2020-05-21 01:06:07 INFO  ServiceLogAspect:44 = ====== end, cost: 677 ms =======
+2020-05-21 01:06:07 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.CategoryServiceImpl.querySixNewItems=======
