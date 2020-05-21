@@ -94,6 +94,26 @@ public class PassportController {
         }
     }
 
+    @PostMapping("/logout")
+    public JSONResult logout(@RequestParam String userId,
+                             HttpServletRequest request,
+                             HttpServletResponse response) {
+
+        // if input is valid
+        if (StringUtil.isEmpty(userId)) {
+            return JSONResult.errorMsg("userid can not be empty!");
+        }
+
+        // complete
+        try {
+            CookieUtil.deleteCookie(request, response, "user");
+            return JSONResult.ok();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return JSONResult.errorMsg("userid is wrong");
+        }
+    }
+
     private Users setUserEmptyProperty(Users users) {
         users.setPassword(null);
         users.setMobile(null);

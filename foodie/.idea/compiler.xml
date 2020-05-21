@@ -8,8 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="shopping-dev-api" />
-        <module name="shopping-dev-pojo" />
         <module name="shopping-dev-service" />
+        <module name="shopping-dev-pojo" />
         <module name="shopping-dev-common" />
         <module name="shopping-dev-mapper" />
       </profile>

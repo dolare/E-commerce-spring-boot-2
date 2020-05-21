@@ -8,4 +8,5 @@ public interface UserService {
     public Users createUser(UserBo userBO);
 
     public Users queryUserForLogin(String username, String password);
+
 }

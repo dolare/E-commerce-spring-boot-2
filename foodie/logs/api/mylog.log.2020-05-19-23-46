@@ -1,0 +1,10 @@
+2020-05-19 23:46:00 INFO  TomcatWebServer:204 = Tomcat started on port(s): 8088 (http) with context path ''
+2020-05-19 23:46:00 INFO  Application:59 = Started Application in 3.655 seconds (JVM running for 4.534)
+2020-05-19 23:46:38 INFO  DispatcherServlet:524 = Initializing Servlet 'dispatcherServlet'
+2020-05-19 23:46:38 INFO  DispatcherServlet:546 = Completed initialization in 8 ms
+2020-05-19 23:46:38 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.UserServiceImpl.queryUserForLogin=======
+2020-05-19 23:46:38 INFO  HikariDataSource:110 = DataSourceHakariCP - Starting...
+2020-05-19 23:46:38 WARN  DriverDataSource:68 = Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-05-19 23:46:39 INFO  HikariDataSource:123 = DataSourceHakariCP - Start completed.
+2020-05-19 23:46:39 INFO  ServiceLogAspect:44 = ====== end, cost: 624 ms =======
+2020-05-19 23:46:39 INFO  CookieUtil:189 = ========== domainName: localhost ==========
