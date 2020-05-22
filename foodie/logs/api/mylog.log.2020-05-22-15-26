@@ -1,0 +1,13 @@
+2020-05-22 15:26:02 INFO  DispatcherServlet:524 = Initializing Servlet 'dispatcherServlet'
+2020-05-22 15:26:02 INFO  DispatcherServlet:546 = Completed initialization in 13 ms
+2020-05-22 15:26:02 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.ItemServiceImpl.queryItemById=======
+2020-05-22 15:26:02 INFO  HikariDataSource:110 = DataSourceHakariCP - Starting...
+2020-05-22 15:26:02 WARN  DriverDataSource:68 = Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-05-22 15:26:03 INFO  HikariDataSource:123 = DataSourceHakariCP - Start completed.
+2020-05-22 15:26:03 INFO  ServiceLogAspect:44 = ====== end, cost: 653 ms =======
+2020-05-22 15:26:03 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.ItemServiceImpl.queryItemImgList=======
+2020-05-22 15:26:03 INFO  ServiceLogAspect:44 = ====== end, cost: 27 ms =======
+2020-05-22 15:26:03 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.ItemServiceImpl.queryItemSpecList=======
+2020-05-22 15:26:03 INFO  ServiceLogAspect:44 = ====== end, cost: 5 ms =======
+2020-05-22 15:26:03 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.ItemServiceImpl.queryItemParam=======
+2020-05-22 15:26:03 INFO  ServiceLogAspect:44 = ====== end, cost: 6 ms =======

@@ -7,6 +7,7 @@ com\dolare\pojo\bo\UserBo.class
 com\dolare\pojo\Orders.class
 com\dolare\pojo\ItemsImg.class
 com\dolare\pojo\Category.class
+com\dolare\pojo\vo\ItemInfoVO.class
 com\dolare\pojo\Users.class
 com\dolare\pojo\OrderItems.class
 com\dolare\pojo\vo\SubCategoryVO.class

@@ -1,0 +1,8 @@
+2020-05-22 15:27:04 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.ItemServiceImpl.queryItemById=======
+2020-05-22 15:27:04 INFO  ServiceLogAspect:44 = ====== end, cost: 8 ms =======
+2020-05-22 15:27:04 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.ItemServiceImpl.queryItemImgList=======
+2020-05-22 15:27:04 INFO  ServiceLogAspect:44 = ====== end, cost: 6 ms =======
+2020-05-22 15:27:04 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.ItemServiceImpl.queryItemSpecList=======
+2020-05-22 15:27:04 INFO  ServiceLogAspect:44 = ====== end, cost: 5 ms =======
+2020-05-22 15:27:04 INFO  ServiceLogAspect:26 = ====== start, class com.dolare.service.implement.ItemServiceImpl.queryItemParam=======
+2020-05-22 15:27:04 INFO  ServiceLogAspect:44 = ====== end, cost: 3 ms =======

@@ -1,6 +1,8 @@
 com\dolare\service\CategoryService.class
 com\dolare\service\implement\CarouselServiceImpl.class
+com\dolare\service\implement\ItemServiceImpl.class
+com\dolare\service\implement\CategoryServiceImpl.class
 com\dolare\service\implement\UserServiceImpl.class
 com\dolare\service\UserService.class
-com\dolare\service\implement\CategoryServiceImpl.class
+com\dolare\service\ItemService.class
 com\dolare\service\CarouselService.class
