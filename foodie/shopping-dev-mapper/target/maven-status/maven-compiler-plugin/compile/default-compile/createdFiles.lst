@@ -4,6 +4,7 @@ com\dolare\mapper\CategoryMapper.class
 com\dolare\mapper\ItemsCommentsMapper.class
 com\dolare\mapper\UsersMapper.class
 com\dolare\mapper\CategoryMapperCustom.class
+com\dolare\mapper\ItemsMapperCustom.class
 com\dolare\mapper\OrdersMapper.class
 com\dolare\mapper\CarouselMapper.class
 com\dolare\mapper\ItemsParamMapper.class

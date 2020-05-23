@@ -1,8 +1,10 @@
+com\dolare\utils\PagedGridResult.class
 org\n3r\idworker\Id.class
 org\n3r\idworker\strategy\DefaultRandomCodeStrategy.class
 org\n3r\idworker\utils\HttpReq.class
 org\n3r\idworker\Code.class
 org\n3r\idworker\strategy\FileLock.class
+com\dolare\utils\DesensitizationUtil.class
 com\dolare\utils\JSONResult.class
 org\n3r\idworker\Test.class
 com\dolare\utils\CookieUtil.class
@@ -27,5 +29,6 @@ org\n3r\idworker\utils\Ip.class
 com\dolare\enums\Sex.class
 org\n3r\idworker\strategy\DefaultWorkerIdStrategy$2.class
 org\n3r\idworker\strategy\DefaultWorkerIdStrategy.class
+com\dolare\enums\CommentLevel.class
 com\dolare\utils\DateUtil.class
 com\dolare\utils\MD5.class

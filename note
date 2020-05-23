@@ -30,7 +30,13 @@ Shopping
 
 13. session: 非持久，session is by session id, key value storrage type.  HttpSession.  it is stored in browser cookie part(section) as well.
 
-14. 
+14. mapper -> xml(select, result) 
+
+15. use enum for all of the number or options
+
+16. use pageHelper to do the mybatis pager
+
+17. 
 # Start Docker Service
 
 docker-machine ip default                                                                                          192.168.99.100

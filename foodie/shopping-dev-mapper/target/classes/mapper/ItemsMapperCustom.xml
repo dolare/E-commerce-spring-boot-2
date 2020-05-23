@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dolare.mapper.ItemsMapperCustom" >
+  <resultMap id="BaseResultMap" type="com.dolare.pojo.vo.ItemCommentVO" >
+      <result column="comment_level" property="commentLevel" jdbcType="INTEGER" />
+      <result column="cotent" property="content" jdbcType="VARCHAR" />
+      <result column="spec_name" property="specName" jdbcType="INTEGER" />
+      <result column="created_time" property="createdTime" jdbcType="TIMESTAMP" />
+      <result column="user_face" property="userFace" jdbcType="VARCHAR" />
+      <result column="nickname" property="nickname" jdbcType="VARCHAR" />
+
+  </resultMap>
+
+  <select id="queryItemsComments" parameterType="Map" resultType="com.dolare.pojo.vo.ItemCommentVO">
+     SELECT
+        ic.comment_level as commentLevel,
+        ic.content as content,
+        ic.sepc_name as sepcName,
+        ic.created_time as createdTime,
+        u.face as userFace,
+        u.nickname as nickname
+    FROM
+        items_comments ic
+    LEFT JOIN
+        users u
+    ON
+        ic.user_id = u.id
+    where
+        ic.item_id = #{paramsMap.itemId}
+        <if test="paramsMap.level != null and paramsMap.level != ''">
+          AND ic.comment_level = #{paramsMap.level}
+        </if>
+
+  </select>
+
+  <select id="searchItems" parameterType="Map" resultType="com.dolare.pojo.vo.SearchItemsVO">
+     select
+      i.item_name as itemName,
+      i.id as itemId,
+      i.sell_counts as sellCounts,
+      ii.url as imgUrl,
+      tempSpec.price_discount as price
+    from items i
+    left join
+      items_img ii
+    on
+      i.id = ii.item_id
+    left join
+        (SELECT item_id, MIN(price_discount) as price_discount FROM items_spec is1 group by item_id) tempSpec
+    on
+      i.id = tempSpec.item_id
+    WHERE
+      ii.is_main = 1
+      <if test="paramsMap.keywords != null and paramsMap.keywords != ''">
+        AND i.item_name like '%${paramsMap.keywords}%'
+        OR i.id like '%${paramsMap.keywords}%'
+      </if>
+        order by
+        <choose>
+          <when test="paramsMap.sort == &quot;c&quot;">
+            i.sell_counts desc
+          </when>
+          <when test="paramsMap.sort == '&quot;p&quot;'">
+            tempSpec.price_discount asc
+          </when>
+          <otherwise>
+            i.item_name desc
+          </otherwise>
+        </choose>
+    </select>
+</mapper>

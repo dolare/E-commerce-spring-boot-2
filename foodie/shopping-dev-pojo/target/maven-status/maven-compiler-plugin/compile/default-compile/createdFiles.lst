@@ -8,10 +8,12 @@ com\dolare\pojo\Orders.class
 com\dolare\pojo\ItemsImg.class
 com\dolare\pojo\Category.class
 com\dolare\pojo\vo\ItemInfoVO.class
+com\dolare\pojo\vo\ItemCommentVO.class
 com\dolare\pojo\Users.class
 com\dolare\pojo\OrderItems.class
 com\dolare\pojo\vo\SubCategoryVO.class
 com\dolare\pojo\Carousel.class
 com\dolare\pojo\vo\SimpleItemVO.class
+com\dolare\pojo\vo\CommentLevelCountsVO.class
 com\dolare\pojo\ItemsParam.class
 com\dolare\pojo\ItemsSpec.class

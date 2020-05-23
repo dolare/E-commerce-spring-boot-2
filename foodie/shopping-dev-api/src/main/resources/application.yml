@@ -36,3 +36,7 @@ mapper:
   mapper: com.dolare.my.mapper.MyMapper
   not-empty: false
   identity: MYSQL
+
+pageHelper:
+  helperDialect: mysql
+  supportMethodsArguments: true
